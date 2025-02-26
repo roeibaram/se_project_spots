@@ -1,21 +1,29 @@
-# Project 3: Spots
+# Project 3: Spots - A Photo Sharing App
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Figma
+- Images
+
 **Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
+
+This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+
+**Figma**
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
 Good luck and have fun!
+
+**description**
+
+we have a fully responsive design for seamless display and efficiency on all screen sizes, a user profile section with avatar and bio, photo gallery made using grid layout which auto fills photos according to screen size, create/edit buttons for editing the profile and posts.
+
+**technologies used**
+
+HTML: Structure and semantics (adhearing to BEM Rules)
+CSS: Layout styling and responsiveness (flex,grid techniques)
+Figma: UI/UX design platform
+
+**video or photos will be sent after first iteration as requested**

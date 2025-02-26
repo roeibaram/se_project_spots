@@ -32,3 +32,19 @@
   opacity: 0.4;
   margin-top: 12px;
 }
+
+@media screen and (max-width: 627px) {
+  .card {
+    max-width: 288px;
+    max-height: 318px;
+  }
+  .card__image {
+    width: 288px;
+    height: 288px;
+  }
+  .card__title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
