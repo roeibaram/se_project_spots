@@ -1,0 +1,12 @@
+.page {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  max-width: 1280px;
+  min-height: calc(100vh - 60px);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 44px;
+}
+
+body {
+  background-color: #fcf5e5;
+}
