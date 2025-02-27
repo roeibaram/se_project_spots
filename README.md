@@ -27,8 +27,6 @@ CSS: Layout styling and responsiveness (flex,grid techniques)
 Figma: UI/UX design platform
 
 **recorded video link**
-https://drive.google.com/file/d/1jREpHMUmwBJqHEUIFG4ryj_h5DFHuSc5/view?usp=share_link
-**comment about semnatics tags- i was refering to the bem structure of main, sections, with appropriate class names**
 
 **also, here is a link to this web app on github pages:**
 https://roeibaram.github.io/se_project_spots/

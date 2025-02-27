@@ -1,18 +1,18 @@
 .header {
   background: #fff;
-  width: 100%;
-  height: 46px;
-  padding: 10px 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: 10px 0;
 }
 
 .header__logo {
+  width: 94px;
+  height: 26px;
+}
+
+.header__container {
   width: 94px;
   height: 26px;
 }

@@ -21,7 +21,7 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 1;
   max-width: 420px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -59,6 +59,8 @@
   height: auto;
   display: flex;
   gap: 8px;
+  align-items: center;
+  opacity: 0.7;
 }
 
 .profile__edit-button::before {
@@ -70,7 +72,8 @@
 
 .profile__edit-button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  color: rgb(33, 33, 33);
+  opacity: 1;
 }
 
 .profile__plus-icon {
@@ -124,8 +127,8 @@
     color: #212121;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 32px;
     line-height: 1;
+    text-align: center;
   }
 
   .profile__avatar {
@@ -158,5 +161,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
+    text-align: center;
   }
 }

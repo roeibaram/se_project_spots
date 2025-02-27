@@ -54,9 +54,7 @@
 
   .card__title {
     font-size: 16px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    line-height: 1;
     max-width: 250px;
   }
 }
