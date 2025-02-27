@@ -26,7 +26,9 @@ HTML: Structure and semantics (adhearing to BEM Rules)
 CSS: Layout styling and responsiveness (flex,grid techniques)
 Figma: UI/UX design platform
 
-**video or photos will be sent after first iteration as requested**
+**recorded video link**
+https://drive.google.com/file/d/1jREpHMUmwBJqHEUIFG4ryj_h5DFHuSc5/view?usp=share_link
+**comment about semnatics tags- i was refering to the bem structure of main, sections, with appropriate class names**
 
-in the meantime, here is a link to this web app on github pages:
+**also, here is a link to this web app on github pages:**
 https://roeibaram.github.io/se_project_spots/

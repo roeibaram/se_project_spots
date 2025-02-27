@@ -4,9 +4,9 @@
   min-height: calc(100vh - 60px);
   width: 90%;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: calc(46px + 34px);
 }
 
-body {
+.page__background {
   background-color: #fcf5e5;
 }

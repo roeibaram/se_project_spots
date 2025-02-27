@@ -18,14 +18,13 @@
 
 .profile__name {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
   max-width: 420px;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -34,14 +33,13 @@
 .profile__description {
   margin: 12px 0 0;
   color: rgba(33, 33, 33, 0.7);
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
   max-width: 420px;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -49,7 +47,7 @@
 
 .profile__edit-button {
   margin-top: auto;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1;
@@ -61,6 +59,18 @@
   height: auto;
   display: flex;
   gap: 8px;
+}
+
+.profile__edit-button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/button-pencil.svg);
+}
+
+.profile__edit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .profile__plus-icon {
@@ -75,15 +85,28 @@
   border: none;
   border-radius: 8px;
   padding: 18px 24px 18px 32px;
-  color: #fff;
+  color: #fcf5e5;
   align-self: flex-end;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  white-space: nowrap;
+}
+
+.profile__add-button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/plus.svg);
+}
+
+.profile__add-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
@@ -98,10 +121,15 @@
   .profile__name {
     font-size: 20px;
     max-width: 288px;
+    color: #212121;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
   }
 
   .profile__avatar {
-    margin-right: 0 auto;
+    margin: 0 auto;
     height: 80px;
     width: 80px;
   }
@@ -111,6 +139,7 @@
     margin-top: 32px;
     margin-bottom: 20px;
   }
+
   .profile__add-button {
     margin: 0;
     justify-content: center;
@@ -125,5 +154,9 @@
   .profile__description {
     margin-top: 6px;
     max-width: 288px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
   }
 }
