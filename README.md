@@ -27,6 +27,7 @@ CSS: Layout styling and responsiveness (flex,grid techniques)
 Figma: UI/UX design platform
 
 **recorded video link**
+https://drive.google.com/file/d/1W_h1TZrYI4Q6iQrNvlXn8zbu2VUUTB7n/view?usp=sharing
 
 **also, here is a link to this web app on github pages:**
 https://roeibaram.github.io/se_project_spots/
