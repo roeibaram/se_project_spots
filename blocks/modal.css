@@ -44,7 +44,7 @@
   background-image: url("../images/close-btn.svg");
   background-size: contain;
 
-  opacity: 0.4; /* This applies opacity ONLY to the SVG */
+  opacity: 0.4;
 }
 
 .modal__title {
@@ -54,9 +54,6 @@
   font-size: 32px;
   line-height: 1;
   color: #000000;
-}
-
-.modal__form {
 }
 
 .modal__label {
