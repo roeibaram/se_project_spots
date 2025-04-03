@@ -47,6 +47,7 @@
                 <img alt="" src="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
+                  <button type="button" class="card__delete-button"></button>
                   <button type="button" class="card__like-button"></button>
                 </div>
               </li>
@@ -82,6 +83,44 @@
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
           </form>
+        </div>
+      </div>
+      <div class="modal" id="add-card-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">New post</h2>
+          <form name="add-card" class="modal__form">
+            <label for="add-card-link" class="modal__label">
+              Image link
+              <input
+                id="add-card-link"
+                type="text"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label for="add-card-caption" class="modal__label">
+              Caption
+              <input
+                id="add-card-caption"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__save-btn">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal" id="preview-modal">
+        <div class="modal__content">
+          <button type="button" class="modal__close"></button>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+            alt=""
+            class="modal__image"
+          />
+          <p class="modal__caption">golden gate bridge</p>
         </div>
       </div>
     </div>
