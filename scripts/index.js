@@ -1,4 +1,4 @@
-let initialCards = [
+const initialCards = [
   {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
@@ -30,14 +30,16 @@ const cardsList = document.querySelector(".cards__list");
 const previewModal = document.querySelector("#preview-modal");
 const previewImage = previewModal.querySelector(".modal__image");
 const previewCaption = previewModal.querySelector(".modal__caption");
-const previewCloseButton = previewModal.querySelector(".modal__close");
+const previewCloseButton = previewModal.querySelector(
+  ".modal__close-btn_type_preview"
+);
 const newCardButton = document.querySelector(".profile__add-button");
 const editProfileButton = document.querySelector(".profile__edit-button");
 const editModal = document.querySelector("#edit-modal");
 const addCardModal = document.querySelector("#add-card-modal");
 const editModalcloseButton = editModal.querySelector(".modal__close-btn");
 const addModalCloseButton = addCardModal.querySelector(".modal__close-btn");
-const cardSavebutton = document.querySelector(".modal__card-save-btn");
+const cardSavebutton = document.querySelector(".modal__save-btn");
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
@@ -129,6 +131,7 @@ function getCardElement(data) {
 
   cardImageElement.addEventListener("click", () => {
     previewImage.src = data.link;
+    previewImage.alt = data.name;
     previewCaption.textContent = data.name;
     openModal(previewModal);
   });
