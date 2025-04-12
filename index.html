@@ -62,7 +62,7 @@
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit Profile</h2>
-          <form name="edit-profile" class="modal__form">
+          <form name="edit-profile" class="modal__form" novalidate>
             <label for="name" class="modal__label">
               Name
               <input
@@ -70,7 +70,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
+                required
               />
+              <span class="modal__error" id="name-error"></span>
             </label>
             <label for="description" class="modal__label">
               Description
@@ -79,9 +83,15 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                minlength="2"
+                maxlength="200"
+                required
               />
+              <span class="modal__error" id="description-error"></span>
             </label>
-            <button type="submit" class="modal__save-btn">Save</button>
+            <button type="submit" class="modal__save-btn modal__button">
+              Save
+            </button>
           </form>
         </div>
       </div>
@@ -89,15 +99,17 @@
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New post</h2>
-          <form name="add-card" class="modal__form">
+          <form name="add-card" class="modal__form" novalidate>
             <label for="add-card-link" class="modal__label">
               Image link
               <input
                 id="add-card-link"
-                type="text"
+                type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
+              <span class="modal__error" id="add-card-link-error"></span>
             </label>
             <label for="add-card-caption" class="modal__label">
               Caption
@@ -106,9 +118,15 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span class="modal__error" id="add-card-caption-error"></span>
             </label>
-            <button type="submit" class="modal__save-btn">Save</button>
+            <button type="submit" class="modal__save-btn modal__button">
+              Save
+            </button>
           </form>
         </div>
       </div>
@@ -124,5 +142,6 @@
       </div>
     </div>
     <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/validation.js"></script>
   </body>
 </html>
