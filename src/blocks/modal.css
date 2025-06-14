@@ -30,31 +30,22 @@
 
 .modal__content {
   position: relative;
-  max-height: 75vh;
-  padding: 32px 20px;
+  display: flex;
+  padding: 0;
   background-color: white;
   border-radius: 8px;
-  width: 613px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: visible;
+  line-height: 0;
 }
 
 .modal__image {
+  display: block;
   width: 100%;
-  max-width: 90vw;
-  max-height: 75vh;
+  height: auto;
+  max-height: 90vh;
   object-fit: contain;
-  border-radius: 8px;
-}
-
-.modal__caption {
-  margin: 8px 0 0 0;
-  padding: 4px 8px;
-  background-color: #000000;
-  color: #fff;
-  font-family: Poppins, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  width: fit-content;
   border-radius: 8px;
 }
 
@@ -206,7 +197,7 @@
 .modal__close-btn_type_preview {
   position: absolute;
   top: 32px;
-  right: -50px;
+  right: 0;
   width: 40px;
   height: 40px;
   background: transparent url("../images/Close-white-Icon.svg") center no-repeat;
@@ -257,43 +248,43 @@
   }
 
   .modal__content {
-    width: 100%;
-    max-width: 100vw;
-    padding: 32px 10vw;
+    display: inline-block;
+    width: auto;
     background-color: white;
     border-radius: 8px;
     box-sizing: border-box;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow: visible;
   }
 
   .modal__image {
-    width: 288px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     border-radius: 8px;
-    align-self: center;
   }
 
   .modal__close-btn {
-    top: -50px;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal__close-btn_type_preview {
+    top: -30px;
     right: 0;
   }
 
   .modal__title {
     margin: 0 0 20px 0;
     padding-top: 14px;
-
     font-family: Poppins;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-
-    text-align: center;
-  }
-
-  .modal__form_type_delete {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding-bottom: 12px;
+    text-align: left;
   }
 
   .modal__label {
@@ -302,6 +293,13 @@
 
   .modal__input::placeholder {
     font-size: 16px;
+  }
+  .modal__form_type_delete {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 12px;
   }
 
   .modal__input:focus {
