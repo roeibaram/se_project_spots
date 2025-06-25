@@ -9,7 +9,7 @@
       name="keywords"
       content="Spots, photo sharing app, social media, photography, upload photos, share moments, best photo app, travel photography, social networking, image sharing"
     />
-    <link rel="stylesheet" href="./pages/index.css" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
@@ -17,20 +17,21 @@
     <div class="page">
       <header class="header">
         <div class="header__container">
-          <img
-            src="./images/spots_logo.svg"
-            alt="app logo"
-            class="header__logo"
-          />
+          <img src="" alt="app logo" class="header__logo" />
         </div>
       </header>
       <main class="content">
         <section class="profile">
-          <img
-            src="./images/avatar.jpg"
-            alt="profile picture"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <img
+              id="profile-avatar"
+              alt="profile picture"
+              class="profile__avatar"
+            />
+            <button class="profile__avatar-btn">
+              <img src="" alt="pencil icon" class="profile__pencil-icon" />
+            </button>
+          </div>
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
@@ -58,6 +59,7 @@
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Spots</p>
       </footer>
+
       <div class="modal" id="edit-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -95,6 +97,7 @@
           </form>
         </div>
       </div>
+
       <div class="modal" id="add-card-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -130,6 +133,7 @@
           </form>
         </div>
       </div>
+
       <div class="modal" id="preview-modal">
         <div class="modal__content">
           <button
@@ -141,7 +145,53 @@
         </div>
       </div>
     </div>
-    <script defer src="./scripts/index.js"></script>
-    <script defer src="./scripts/validation.js"></script>
+    <div class="modal" id="avatar-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__close-btn"></button>
+        <h2 class="modal__title">Edit profile avatar</h2>
+        <form name="edit-avatar-image" class="modal__form" novalidate>
+          <label for="profile-avatar-input" class="modal__label">
+            Profile Picture
+            <input
+              id="profile-avatar-input"
+              type="url"
+              class="modal__input"
+              name="avatar"
+              placeholder="Paste the link to an image"
+              minlength="2"
+              required
+            />
+            <span class="modal__error" id="profile-avatar-input-error"></span>
+          </label>
+          <button type="submit" class="modal__save-btn modal__button">
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="delete-modal">
+      <div class="modal__content">
+        <button
+          type="button"
+          class="modal__close-btn modal__close-btn_type_last"
+        ></button>
+        <h2 class="modal__title modal__title_type_avatar">
+          Are you sure you want to delete this image?
+        </h2>
+        <form
+          name="delete-card"
+          class="modal__form modal__form_type_delete"
+          novalidate
+        >
+          <button type="submit" class="modal__button modal__button_type_delete">
+            Delete
+          </button>
+          <button type="button" class="modal__button modal__button_type_cancel">
+            Cancel
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
