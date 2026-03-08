@@ -218,9 +218,10 @@ function handleAddCardFormSubmit(evt) {
   const originalText = saveBtn.textContent;
   saveBtn.textContent = "Saving...";
 
+  // Trim inputs so submitted cards do not keep accidental outer spaces.
   const newCard = {
-    name: addCardCaptionInput.value,
-    link: addCardLinkInput.value,
+    name: addCardCaptionInput.value.trim(),
+    link: addCardLinkInput.value.trim(),
   };
 
   api
